@@ -1,4 +1,3 @@
-#MovieTags
 
 Data structures used: Tag, a class for holding the attributes of each row of the csv and ArrayList which holds a Tag for each row in the csv.
 
@@ -38,16 +37,18 @@ Final runtime: O (N Log N)  + O(N) +  O (N Log N) + O(1) = O (N Log N)
 Find tags by count and counts by name
 
 Data structures used: 
-frequenciesByName and frequencies are ArrayLists with N possible elements where N is the number of rows in tags.csv. 
-TagFrequency, a class that holds the tag and frequency for each row of the csv, created in the previous step.
-Results ArrayList for storing the tags that have matching frequencies to for printing to console.
+- frequenciesByName and frequencies are ArrayLists with N possible elements where N is the number of rows in tags.csv. 
+- TagFrequency, a class that holds the tag and frequency for each row of the csv, created in the previous step.
+- Results ArrayList for storing the tags that have matching frequencies to for printing to console.
 
 Algorithm:
-Sort the frequencies by unique tag name and store in frequenciesByName
-Use the sorted frequencies by count stored in frequencies
+- Sort the frequencies by unique tag name and store in frequenciesByName
+- Use the sorted frequencies by count stored in frequencies
+
 If searching by tag:
 Do a binary search on frequenciesByName for the given tag. If the given tag exists, print that tag’s frequency, otherwise print that the tag wasn’t found.
-If searching by count.
+
+If searching by count:
 Do error handling for the given count input.
 Do a binary search for an index, idx, in the frequencies list that has the given count.
 Search indices in the frequencies list to the left and right of idx for tags that have matching count to the given count. This allows us to capture all of the tags that may have the same count.

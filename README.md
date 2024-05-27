@@ -1,32 +1,33 @@
 # cs245-03-ass01
-Read the file
+
 
 Data structures used: Tag, a class for holding the attributes of each row of the csv and ArrayList which holds a Tag for each row in the csv.
 
 Algorithm:
 For each line in the csv
-find the 3 delimiting commas that separated the attributes of a row
- Construct a Tag instance from those attributes
-append those to an ArrayList of tags.
+- Find the 3 delimiting commas that separated the attributes of a row
+- Construct a Tag instance from those attributes
+- Append those to an ArrayList of tags.
 
 Big-O running time: O(N) where N is the number of rows in the csv.
 
-		 	 	 		
-			
-				
-List most and least popular tags
+		 	 	 							
+List most and least popular tags:
  
-Data structures used: TagFrequency, a class that holds the tag and frequency for each row of the csv, created in the previous step. ArrayList frequencies which hold the TagFrequency’s for unique tags. Lowest and highest which are both Arraylist sublists of frequencies.
+Data structures used: 
+- TagFrequency, a class that holds the tag and frequency for each row of the csv, created in the previous step.
+- ArrayList frequencies which hold the TagFrequency’s for unique tags.
+- Lowest and highest which are both Arraylist sublists of frequencies.
 
 Algorithm:
-Sort the tags list by name. 
-Create a new ArrayList, frequencies, which will hold TagFrequency instances. 
-Create a TagFrequency instance for the first tag in the tags list. 
-Iterate over the tags list 
-keep incrementing the frequency of the current TagFrequency object if the current TagFrequency object’s tag and the current word being iterated over are the same. 
-Otherwise append the current TagFrequencies object to our frequencies list and create a new TagFrequency object for the new unique tag. Go back to d. and treat the new TagFrequency object as the current TagFrequency object.
-Sort the frequencies by count.
-Create sublists with the first 3 objects in the frequencies list (highest frequency) and last 3 objects (lowers frequency). Print these in the proper format for presenting highest and lowest frequency.
+- Sort the tags list by name. 
+- Create a new ArrayList, frequencies, which will hold TagFrequency instances. 
+- Create a TagFrequency instance for the first tag in the tags list. 
+- Iterate over the tags list 
+- Keep incrementing the frequency of the current TagFrequency object if the current TagFrequency object’s tag and the current word being iterated over are the same. 
+- Otherwise append the current TagFrequencies object to our frequencies list and create a new TagFrequency object for the new unique tag. Go back to d. and treat the new TagFrequency object as the current TagFrequency object.
+- Sort the frequencies by count.
+- Create sublists with the first 3 objects in the frequencies list (highest frequency) and last 3 objects (lowers frequency). Print these in the proper format for presenting highest and lowest frequency.
 
 Runtime: 
 O(N Log N) for sorting tags list by names

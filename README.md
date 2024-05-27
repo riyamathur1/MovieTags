@@ -1,5 +1,4 @@
-# cs245-03-ass01
-
+#MovieTags
 
 Data structures used: Tag, a class for holding the attributes of each row of the csv and ArrayList which holds a Tag for each row in the csv.
 

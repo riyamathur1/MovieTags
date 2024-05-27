@@ -1,7 +1,7 @@
 # Tag Analysis Project
 
 ## Project Description
-In this project, we create a search functionality for movie tags from the MovieLens Dataset. The goal is to analyze the tags used by entertainment consumers, leveraging efficient data structures and algorithms. The implementation reads data from a file of tags, allows the user to search for individual tags by popularity, and displays the results in a user-friendly manner.
+In this project, I created a search functionality for movie tags from the MovieLens Dataset. The goal is to analyze the tags used by entertainment consumers, leveraging efficient data structures and algorithms. The implementation reads data from a file of tags, allows the user to search for individual tags by popularity, and displays the results in a user-friendly manner.
 
 ## Data Structures and Algorithms
 

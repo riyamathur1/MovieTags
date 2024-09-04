@@ -79,3 +79,7 @@ For each line in the CSV:
 - Worst case for count search: `O(N)`
 
 ---
+## Warning
+
+For academic honesty, do not replicate or use this code for coursework or assessments.
+
